@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #74DAC2;
+  margin: 0;
+  padding: auto;
+  color: #333;
+}
+
+img {
+  width: 1000px;
+  height: 680px;
+}
+
+header {
+  background-color: #88ac85;
+  ;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+  nav ul li {
+    display: inline;
+    margin: 0 1rem;
+  }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+
+.cta-btn {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#about, #features, #login, #mapa {
+  padding: 2rem;
+  margin: 2rem 0;
+  background-color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#map {
+  height: 300px;
+  background-color: #e2e2e2;
+}
+
+footer {
+  background-color: #545957;
+  ;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #74DAC2;
+    margin: 0;
+    padding: auto;
+}
+
+img {
+    width: 1000px;
+    height: 680px;
+}
+
+#container{
+    display: flex;
+    align-items: normal;
+    margin-top: 60px;
+}
+
+#div-1{
+    width: 360px;
+    height: 350px;
+    background-color: #509e8c;
+    display: flex;
+    flex-direction: column;
+}
+
+#div-2{
+    width: 360px;
+    height: 50px;
+    background-color: #f6ea3b;
+    display: flex;
+    flex-direction: column;
+}
+
+#div-3{
+    margin-top: 14px;
+    width: 360px;
+    height: 500px;
+    background-color: #973d0d;
+    display: flex;
+    flex-direction: column;
+}
+
+#font-type-1{
+    color: #b3fff0;
+}
+
+#font-type-2{
+    margin-top: 20px;
+    color: #ffbd95;
+}
+
+#input-type-1{
+    width: 351px;
+}
+
+   
+  
