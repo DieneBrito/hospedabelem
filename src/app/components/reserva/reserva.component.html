@@ -1,0 +1,37 @@
+<div class="container" style="text-align: center;">
+  <div class="row col-lg-12">
+    <div style="margin-top:20px;">
+      <h2>Checkin & Checkout</h2>
+      <br /><br />
+      <mat-form-field>
+        <mat-label>Enter a date range</mat-label>
+        <mat-date-range-input [formGroup]="range" [rangePicker]="picker">
+          <input matStartDate formControlName="start" placeholder="Start date">
+          <input matEndDate formControlName="end" placeholder="End date">
+        </mat-date-range-input>
+        <!--<mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>-->
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+
+        @if (range.controls.start.hasError('matStartDateInvalid')) {
+        <mat-error>Invalid start date</mat-error>
+        }
+        @if (range.controls.end.hasError('matEndDateInvalid')) {
+        <mat-error>Invalid end date</mat-error>
+        }
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row col-lg-12" *ngIf="range.value?.start && range.value?.end">
+    <h3>Datas selecionadas:</h3>
+    <span>
+      {{range.value.start | date: 'dd/MM/yyyy'}} - {{range.value.end | date: 'dd/MM/yyyy'}}
+    </span>
+
+  </div>
+  <br /><br />
+  <div *ngIf="range.value?.start && range.value?.end">
+    <button mat-flat-button>Reservar</button>
+  </div>
+  <br /><br />
+</div>
